@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop It!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="menu">
+            <p class="logo">Logo</p>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <div id="hamburger-btn" class="hamburger--container">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div id="hamburger-menu" class="hamburger--menu d-none">
+                <div class="hambuger--menu--wrapper">
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <section class="banner">
+            <div class="banner--container">
+                <div class="banner--labels">
+                    <h1>Pop It!</h1>
+                    <h4>Lorem ipsum lorem ipsum lorem ipsum</h4>
+
+                    <a href="" class="banner--button">
+                        <button>Lorem ipsum</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="first-box">
+            <div class="first--box--container">
+                <h4>Lorem Ipsum</h4>
+                <div class="description">
+                    <p>
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-box">
+            <div class="second--box--container">
+                <h3>Lorem ipsum</h3>
+                <div class="second--box-buttons">
+                    <div class="button">
+                        <img src="./img/square.png" width="100px" height="auto" alt="">
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        <button class="button--secondary">Lorem ipsum</button>
+                    </div>
+                    <div class="button">
+                        <img src="./img/square.png" width="100px" height="auto" alt="">
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        <button class="button--secondary">Lorem ipsum</button>
+                    </div>
+                    <div class="button">
+                        <img src="./img/square.png" width="100px" height="auto" alt="">
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        <button class="button--secondary">Lorem ipsum</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-box" style="height: 500px;">
+            <div class="third--box--container">
+                <div class="text">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img class="image" src="./img/photo.jpg" width="400px" height="auto" alt="">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <a href="" class="footer--link first">Lorem</a>
+        <a href="" class="footer--link">Lorem ipsum</a>
+        <a href="" class="footer--link">Lorem ipsum</a>
+        <a href="" class="footer--link">Lorem ipsum</a>
+        <a href="" class="footer--link">Lorem ipsum</a>
+    </footer>
+
+    <script>
+
+        //Hamburger functions
+        const btn = document.getElementById('hamburger-btn')
+        btn.addEventListener('click', () => {
+            const hamburger_menu = document.getElementById('hamburger-menu')
+            hamburger_menu.classList.toggle('d-none')
+            btn.classList.toggle('white-text')
+        })
+
+    </script>
+
+</body>
+</html>
